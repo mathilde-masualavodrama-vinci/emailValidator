@@ -1,0 +1,16 @@
+{
+  "name": "emailvalidator",
+  "version": "1.0.0",
+  "description": "MASUA LAVODRAMA Mathilde",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^5.9.0"
+  }
+}
