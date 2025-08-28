@@ -4,9 +4,9 @@
   "description": "MASUA LAVODRAMA Mathilde",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "jasmine"
-  },
+"scripts": {
+  "test": "jasmine"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
