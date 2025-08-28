@@ -46,6 +46,12 @@ describe("Email Validator", function() {
       expect(main.containtsSpace(email)).toBe(false);
     });
 
+    it("containtsSpace return true when given test@test.com", function() {
+      let email = "test@test.com";
+      let main = new Main();
+      expect(main.containtsSpace(email)).toBe(true);
+    });
+
 
   });
 });
