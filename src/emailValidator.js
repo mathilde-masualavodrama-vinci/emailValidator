@@ -4,5 +4,12 @@ export class Main {
       
         return /@/.test(email);
     }
+
+    containsPeriod(email){
+        if((/\./).test(email)){
+            return true;
+        }
+        return false;
+    }
 }
 export default Main;

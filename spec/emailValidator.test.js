@@ -17,6 +17,18 @@ describe("Main", () => {
       let main = new Main();
       expect(main.containsAt(email)).toBe(true);
     });
+
+  });
+
+  describe("containsPeriod check if email contains .", function() {
+
+    it("containsPeriod return false when given test@testcom", function() {
+      let email = "test@testcom";
+      let main = new Main();
+      expect(main.containsPeriod(email)).toBe(false);
+    });
+
     
+
   });
 });
