@@ -6,10 +6,11 @@ export class Main {
     }
 
     containsPeriod(email){
-        if((/\./).test(email)){
-            return true;
+      
+        if(email.endsWith(".")){
+            return false;
         }
-        return false;
+        return (/\./).test(email);
     }
 }
 export default Main;

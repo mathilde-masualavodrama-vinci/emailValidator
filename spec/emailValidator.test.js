@@ -33,6 +33,12 @@ describe("Main", () => {
       let main = new Main();
       expect(main.containsPeriod(email)).toBe(true);
     });
-    
+
+    it("containsPeriod return false when given testcom.", function() {
+      let email = "testcom.";
+      let main = new Main();
+      expect(main.containsPeriod(email)).toBe(false);
+    });
+
   });
 });
