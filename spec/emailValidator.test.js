@@ -11,5 +11,11 @@ describe("Main", () => {
       let main = new Main();
       expect(main.containsAt(email)).toBe(false);
     });
+
+    it("containsAt return true when given test@test.com", function() {
+      let email = "test@test.com";
+      let main = new Main();
+      expect(main.containsAt(email)).toBe(true);
+    });
   });
 });
