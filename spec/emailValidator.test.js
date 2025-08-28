@@ -58,7 +58,11 @@ describe("Email Validator", function() {
       expect(main.checkAtFormat(email)).toBe(false);
     });
 
-   
+    it("checkAtFormat return false when given @.com", function() {
+      let email = "@.com";
+      let main = new Main();
+      expect(main.checkAtFormat(email)).toBe(false);
+    });
 
   });
 });
