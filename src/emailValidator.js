@@ -1,10 +1,8 @@
 export class Main {
 
     containsAt(email){
-        if(/@/.test(email)){
-            return true;
-        }
-        return false;
+      
+        return /@/.test(email);
     }
 }
 export default Main;

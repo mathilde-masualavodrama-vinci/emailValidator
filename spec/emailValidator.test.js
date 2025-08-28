@@ -17,5 +17,6 @@ describe("Main", () => {
       let main = new Main();
       expect(main.containsAt(email)).toBe(true);
     });
+    
   });
 });
