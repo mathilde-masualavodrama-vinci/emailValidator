@@ -65,4 +65,16 @@ describe("Email Validator", function() {
     });
 
   });
+
+  describe("IsValid check if email is valid", function() {
+
+    it("IsValid return false when given test.com", function() {
+      let email = "test.com";
+      let main = new Main();
+      expect(main.IsValid(email)).toBe(false);
+    });
+
+   re
+
+  });
 });

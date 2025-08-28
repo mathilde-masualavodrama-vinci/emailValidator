@@ -1,5 +1,9 @@
 export class Main {
 
+
+      IsValid(email){
+        return this.checkAtFormat(email) && this.containsPeriod(email) && this.containtsSpace(email);
+    }
     containsAt(email){
       
         return /@/.test(email);
@@ -25,5 +29,7 @@ export class Main {
 
            return this.containsAt(email) && email.indexOf('@') < email.length - 1 &&  email.indexOf('@') > 0 ;
     }
+
+  
 }
 export default Main;
