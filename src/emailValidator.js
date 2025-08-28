@@ -13,5 +13,12 @@ export class Main {
         
         return (/\./).test(email);
     }
+
+    containtsSpace(email){
+        if(email.includes(" ")){
+            return false;
+        }
+        return true;
+    }
 }
 export default Main;

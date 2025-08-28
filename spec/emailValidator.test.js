@@ -1,9 +1,5 @@
 import { Main } from "../src/emailValidator.js";
-
-describe("Main", () => {
-  it("should be defined", () => {
-    expect(Main).toBeDefined();
-  });
+describe("Email Validator", function() {
 
   describe("containsAt check if email containt @",function(){
     it("containsAt return false when given test.com", function() {
@@ -39,6 +35,17 @@ describe("Main", () => {
       let main = new Main();
       expect(main.containsPeriod(email)).toBe(false);
     });
+
+  });
+
+  describe("containtsSpace check if email contains space", function() {
+
+    it("containtsSpace return false when given test@ .com", function() {
+      let email = "test@ .com";
+      let main = new Main();
+      expect(main.containtsSpace(email)).toBe(false);
+    });
+
 
   });
 });
