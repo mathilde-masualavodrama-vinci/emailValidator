@@ -10,6 +10,7 @@ export class Main {
         if(email.endsWith(".")){
             return false;
         }
+        
         return (/\./).test(email);
     }
 }
