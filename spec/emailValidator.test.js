@@ -25,5 +25,11 @@ describe("Email Validator", function() {
       let main = new Main();
       expect(main.IsValid(email)).toBe(false);
     });
-    
+
+    it("isValid return false when  given @student.vinci.be", function() {
+      let email = "@student.vinci.be";
+      let main = new Main();
+      expect(main.IsValid(email)).toBe(false);
+    });
+
   });
