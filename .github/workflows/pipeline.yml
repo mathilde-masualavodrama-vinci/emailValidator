@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: npm install and test
-        run: |
-          npm install
-          npm run test
+      - name: Install dependencie
+        run: npm install
+      - name : Run test with Jasmine
+        run: npm run test
