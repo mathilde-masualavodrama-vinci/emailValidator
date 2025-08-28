@@ -20,5 +20,12 @@ export class Main {
         }
         return true;
     }
+
+    checkAtFormat(email){
+        if( this.containsAt(email) || email.indexOf('@') < email.length - 1){
+               return false;
+           }
+           return true;
+    }
 }
 export default Main;
