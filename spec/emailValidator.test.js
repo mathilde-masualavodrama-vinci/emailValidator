@@ -32,4 +32,9 @@ describe("Email Validator", function() {
       expect(main.IsValid(email)).toBe(false);
     });
 
+    it("isValid return true when given mathy@student.vinci.com", function() {
+      let email = "mathy@student.vinci.com";
+      let main = new Main();
+      expect(main.IsValid(email)).toBe(true);
+    }); 
   });
